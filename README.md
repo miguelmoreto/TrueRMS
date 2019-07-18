@@ -2,6 +2,8 @@
 This repository contains the *TrueRMS* C++ library for Arduino. With this library it is possible to calculate the *average* value and the *rms* (root mean square) or *effective* value of a signal. With this library it is also possible to calculate the *(vector)power*, from both, voltage and current signals. The voltage and the voltage representation of a current, can be measured with the ADC of the Arduino by using appropriate input circuitry for scaling the measured quantities down to within the 0-5V compliant ADC input voltage range.
 The provided solution uses a simple method for scaling the units. The user only has to define the full scale peak-to-peak value of the ac input signal(s). This library is easy portable to other platforms.
 
+Modified by Miguel Moreto to allow the specification of a calibration factor instead of the automatically baseline restoration. This way the user enters with a offset value that will be subtracted from the output.
+
 ## Function
 The following library classes are implemented:
 
